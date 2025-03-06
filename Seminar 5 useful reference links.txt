@@ -1,0 +1,50 @@
+* Useful references for seminar 5
+
+*1. one sample ttest
+
+https://www.jmp.com/en_gb/statistics-knowledge-portal/t-test/one-sample-t-test.html
+
+https://statistics.laerd.com/stata-tutorials/one-sample-t-test-using-stata.php
+
+
+*2. two sample t test
+
+https://www.jmp.com/en_gb/statistics-knowledge-portal/t-test/two-sample-t-test.html
+
+https://www.statology.org/two-sample-t-test-stata/
+
+
+*3. one sample median test
+
+https://www.statisticshowto.com/one-sample-median-test/
+
+https://www.reed.edu/psychology/stata/analyses/nonparametric/wilcoxon.html
+
+*4. two sample median test
+
+http://kaichen.work/?p=1095
+
+*5. one way anova test
+
+https://statistics.laerd.com/stata-tutorials/one-way-anova-using-stata.php
+
+https://www.statology.org/one-way-anova-stata/
+
+*6. how barlett test works?
+
+http://cruncheconometrix.blogspot.com/2018/01/one-way-anova-procedure-using-stata.html
+
+https://www3.nd.edu/~rwilliam/stats1/Oneway-Stata.pdf
+
+*7. what is Homogeneity of variance
+
+https://methods.sagepub.com/reference/encyc-of-research-design/n179.xml#:~:text=Homogeneity%20of%20variance%20is%20an,more%20samples%20are%20considered%20equal.
+
+
+*8. Other tests 
+
+https://stats.oarc.ucla.edu/stata/whatstat/what-statistical-analysis-should-i-usestatistical-analyses-using-stata/
+
+*9. useful link for table outputs
+
+http://www.kaichen.work/?p=1218
