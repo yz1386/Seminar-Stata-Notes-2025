@@ -84,6 +84,7 @@ C 2011 900 1.8
 C 2012 800 1.3
 end  
 duplicates drop year, force
+keep year
 
 clear all
 input str20 company year total_asset bm 
@@ -99,6 +100,7 @@ C 2011 900 1.8
 C 2012 800 1.3
 end 
 duplicates drop company, force
+keep company
 
 clear all
 input str20 company year total_asset bm 
