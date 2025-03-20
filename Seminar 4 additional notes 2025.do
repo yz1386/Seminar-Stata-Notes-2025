@@ -218,6 +218,13 @@ sum if firm_id == 6
 
 
 *2.using a STATA loop process
+
+/* make a summary for each company from Company 1 to Company 6 */
 forvalues i = 1/6 {    
 sum if firm_id == `i'
+}
+
+/*conduct a regression for each company from Company 1 to Company 6 */
+forvalues i = 1/6 {
+    regress total_asset bm liability ratings
 }
