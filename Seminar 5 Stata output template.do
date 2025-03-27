@@ -158,21 +158,25 @@ outreg2 using myreg.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tde
 reg total_asset_lead1 bm liability ratings
 outreg2 using myreg.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 3)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
 
-*Add Fix Year/Firm effects
+*Add fix effects
 capture erase myreg_fix.txt
 capture erase myreg_fix.xls
+*Fix year effect
 reg total_asset_lead1 bm liability ratings i.year
-outreg2 using myreg_fix.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 1)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
+outreg2 using myreg_fix.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 1)  addtext(Year fix effect, Yes, control effect 2,Yes,control effect 3, Yes) label
+*Fix firm effect
 reg total_asset_lead1 bm liability ratings i.firm
-outreg2 using myreg_fix.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 2)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
+outreg2 using myreg_fix.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 2)  addtext(Firm fix effect, Yes, control effect 2,Yes,control effect 3, Yes) label
 
 *Add Fix Year/Firm effects reghdfe
 capture erase myreg_fix2.txt
 capture erase myreg_fix2.xls
+*Fix year effect
 reghdfe total_asset_lead1 bm liability ratings,absorb(year)
-outreg2 using myreg_fix2.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 1)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
+outreg2 using myreg_fix2.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 1)  addtext(Year fix effect,, Yes, control effect 2,Yes,control effect 3, Yes) label
+*Fix firm effect
 reghdfe total_asset_lead1 bm liability ratings ,absorb(firm)
-outreg2 using myreg_fix2.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 2)  addtext(control effect 1, Yes, control effect 2,Yes,control effect 3, Yes) label
+outreg2 using myreg_fix2.xls, addstat(Adjusted R-squared, e(r2_a))  tstat bdec(2) tdec(2) rdec(2) parenthesis(tstat) append ctitle(title 2)  addtext(Firm fix effect, Yes, control effect 2,Yes,control effect 3, Yes) label
 
 
 ************************************************************
