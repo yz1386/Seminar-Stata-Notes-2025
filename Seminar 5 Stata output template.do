@@ -4,6 +4,7 @@
 ssc install outreg2,replace
 ssc install asdoc,replace
 ssc install reghdfe,replace
+ssc install ftools,replace
 
 set more off
 
